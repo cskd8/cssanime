@@ -1,5 +1,4 @@
 
-
-window.onload = function(){
+$(document).ready( function(){
 	$('.box').toggleClass('active');
-}();
+});
