@@ -1,6 +1,5 @@
-var $box = $('.box');
-var $button = $('.button');
+var box = $('.box');
 
-$button.on('click', function(){
-	$box.toggleClass('active');
-});
+window.onload = function(){
+	box.toggleClass('active');
+}();
