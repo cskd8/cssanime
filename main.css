@@ -4,9 +4,19 @@
 	background: #000;
 	transition: all 300ms 0s ease;
 }
+.box.active{
+	width: 100px;
+	height: 100px;
+	background: #ff0000;
+	transition: all 300ms 300ms ease;
+}
 
 .active{
 	transform: translateX(300px);
-	transform: translateY(300px);
 	background: #ff0000;
+}
+
+.active2{
+	transform: translateY(300px);
+	background: #000;
 }
