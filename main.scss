@@ -1,0 +1,14 @@
+.box {
+	width: 10vh;
+	height: 10vh;
+	position: relative;
+	top: 45vh;
+	background: #000;
+	transition: all 1000ms 300ms ease;
+}
+
+
+.active {
+	transform: translateX(calc(100vw - 10vh));
+	background: #ff0000;
+}

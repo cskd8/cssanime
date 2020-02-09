@@ -1,14 +1,16 @@
 .box {
-  width: 100px;
-  height: 100px;
+  width: 10vh;
+  height: 10vh;
+  position: relative;
+  top: 45vh;
   background: #000;
   -webkit-transition: all 1000ms 300ms ease;
   transition: all 1000ms 300ms ease;
 }
 
 .active {
-  -webkit-transform: translateX(1000px);
-          transform: translateX(1000px);
+  -webkit-transform: translateX(calc(100vw - 10vh));
+          transform: translateX(calc(100vw - 10vh));
   background: #ff0000;
 }
 /*# sourceMappingURL=main.css.map */
