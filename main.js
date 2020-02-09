@@ -1,4 +1,3 @@
-
-$(document).ready( function(){
-	$('.box').toggleClass('active');
+$(document).ready(function () {
+    $('.box').toggleClass('active');
 });
