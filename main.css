@@ -1,16 +1,24 @@
-.box {
-  width: 10vh;
-  height: 10vh;
-  position: relative;
-  top: 45vh;
-  background: #000;
-  -webkit-transition: all 1000ms 300ms ease;
-  transition: all 1000ms 300ms ease;
+.rect {
+  width: 200px;
+  background-color: aqua;
+  animation-name: sizeScale;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
 }
 
-.active {
-  -webkit-transform: translateX(calc(100vw - 10vh));
-          transform: translateX(calc(100vw - 10vh));
-  background: #ff0000;
+@keyframes sizeScale {
+  0% {
+    width: 200px;
+    opacity: 0;
+  }
+
+  100% {
+    width: 300px;
+    opacity: 1;
+  }
 }
-/*# sourceMappingURL=main.css.map */
