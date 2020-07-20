@@ -1,25 +1,63 @@
 .rect {
-  width: 200px;
-  height: 300px;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
   background-color: aqua;
   animation-name: sizeScale;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 2s;
-  animation-iteration-count: 3;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
   animation-direction: normal;
   animation-fill-mode: forwards;
 
 }
 
+.rect2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  animation-name: sizeScale;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-delay: 0.31s;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+}
+
+.rect3 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  animation-name: sizeScale;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-delay: 0.62s;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: orange;
+}
+
 @keyframes sizeScale {
   0% {
-    width: 200px;
-    opacity: 0;
+    transform: scale(0);
   }
 
   100% {
-    width: 300px;
-    opacity: 1;
+    transform: scale(1);
   }
 }
